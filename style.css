@@ -704,3 +704,95 @@ video{
 }
 
 }
+/* CINEMATIC PREMIUM EFFECTS */
+
+.hero{
+    overflow:hidden;
+}
+
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,rgba(212,175,55,.25),transparent 70%);
+    top:-200px;
+    right:-150px;
+    animation:lightMove 8s infinite alternate;
+}
+
+
+@keyframes lightMove{
+
+from{
+    transform:translate(0,0);
+}
+
+to{
+    transform:translate(-200px,150px);
+}
+
+}
+
+
+/* CARDS GLASS EFFECT */
+
+.product-card,
+.contact-box a,
+.features div{
+
+    backdrop-filter:blur(10px);
+    background:rgba(20,20,20,.75);
+
+}
+
+
+/* IMAGE HOVER */
+
+.gallery img,
+.about-image img{
+
+    transition:.5s ease;
+
+}
+
+
+.gallery img:hover,
+.about-image img:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+/* GOLD TEXT GLOW */
+
+.hero-content h1{
+
+    animation:goldGlow 3s infinite alternate;
+
+}
+
+
+@keyframes goldGlow{
+
+from{
+text-shadow:0 0 10px #d4af37;
+}
+
+to{
+text-shadow:0 0 35px #d4af37;
+}
+
+}
+
+
+/* SMOOTH BUTTON */
+
+.hero-buttons a,
+.nav-call{
+
+    box-shadow:0 0 20px rgba(212,175,55,.25);
+
+}
