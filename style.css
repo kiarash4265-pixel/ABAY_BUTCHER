@@ -499,3 +499,44 @@ nav{
     background:rgba(0,0,0,.4);
     backdrop-filter:blur(5px);
 }
+/* FLOATING BUTTONS */
+
+.floating-buttons{
+    position:fixed;
+    left:25px;
+    bottom:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:999;
+}
+
+
+.floating-buttons a{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+    transition:.3s;
+}
+
+
+.whatsapp-float{
+    background:#25D366;
+    color:white;
+}
+
+
+.call-float{
+    background:#d4af37;
+    color:#000;
+}
+
+
+.floating-buttons a:hover{
+    transform:scale(1.15);
+}
