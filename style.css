@@ -665,3 +665,17 @@ nav{
     }
 
 }
+/* SPEED OPTIMIZATION */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+video{
+    max-width:100%;
+}
+
+*{
+    -webkit-tap-highlight-color:transparent;
+}
