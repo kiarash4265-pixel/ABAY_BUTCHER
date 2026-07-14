@@ -796,3 +796,96 @@ text-shadow:0 0 35px #d4af37;
     box-shadow:0 0 20px rgba(212,175,55,.25);
 
 }
+/* ==========================
+   QR PAGE
+========================== */
+
+.qr-page{
+    background:#0d0d0d;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"Vazirmatn",sans-serif;
+}
+
+.qr-container{
+    width:90%;
+    max-width:500px;
+    text-align:center;
+    padding:40px 25px;
+}
+
+.qr-logo{
+    width:140px;
+    margin-bottom:20px;
+}
+
+.qr-container h1{
+    color:#d4af37;
+    font-size:38px;
+    margin-bottom:5px;
+}
+
+.qr-container h2{
+    margin-bottom:15px;
+}
+
+.qr-container p{
+    color:#ccc;
+    margin-bottom:35px;
+    line-height:2;
+}
+
+.qr-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.qr-buttons a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    text-decoration:none;
+    background:#1a1a1a;
+    color:#fff;
+    border:1px solid #d4af37;
+    border-radius:15px;
+    padding:18px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.qr-buttons a:hover{
+    background:#d4af37;
+    color:#000;
+    transform:translateY(-3px);
+}
+
+.qr-buttons i{
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+.qr-container{
+    width:94%;
+}
+
+.qr-logo{
+    width:110px;
+}
+
+.qr-container h1{
+    font-size:30px;
+}
+
+.qr-buttons a{
+    font-size:16px;
+    padding:16px;
+}
+
+}
